@@ -1,0 +1,11 @@
+{
+  "version": 4,
+  "configurePresets": [
+    {
+      "name": "example-preset",
+      "cacheVariables": {
+        "EXAMPLE_FOO": "Bar"
+      }
+    }
+  ] 
+}

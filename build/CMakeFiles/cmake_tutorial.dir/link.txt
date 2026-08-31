@@ -1,0 +1,1 @@
+/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/cmake_tutorial.dir/link.d CMakeFiles/cmake_tutorial.dir/src/main.cpp.o -o cmake_tutorial  library/libcmake_library.a /usr/lib/libraylib.so.6.0.0 -lm
