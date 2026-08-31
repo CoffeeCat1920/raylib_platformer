@@ -1,6 +1,0 @@
-/home/ok/Code/raylib_platform/build/CMakeFiles/cmake_tutorial.dir
-/home/ok/Code/raylib_platform/build/CMakeFiles/edit_cache.dir
-/home/ok/Code/raylib_platform/build/CMakeFiles/rebuild_cache.dir
-/home/ok/Code/raylib_platform/build/include/CMakeFiles/includes.dir
-/home/ok/Code/raylib_platform/build/include/CMakeFiles/edit_cache.dir
-/home/ok/Code/raylib_platform/build/include/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/ok/Code/raylib_platform/build/cmake_install.cmake",
-		"/home/ok/Code/raylib_platform/build/include/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
