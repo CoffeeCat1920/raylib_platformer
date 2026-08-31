@@ -57,10 +57,10 @@ RM = /usr/sbin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ok/Code/cmake_tutorial
+CMAKE_SOURCE_DIR = /home/ok/Code/raylib_platform
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ok/Code/cmake_tutorial/build
+CMAKE_BINARY_DIR = /home/ok/Code/raylib_platform/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles /home/ok/Code/cmake_tutorial/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles /home/ok/Code/raylib_platform/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/ok/Code/raylib_platform/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -130,17 +131,17 @@ cmake_tutorial/fast:
 .PHONY : cmake_tutorial/fast
 
 #=============================================================================
-# Target rules for targets named cmake_library
+# Target rules for targets named includes
 
 # Build rule for target.
-cmake_library: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_library
-.PHONY : cmake_library
+includes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 includes
+.PHONY : includes
 
 # fast build rule for target.
-cmake_library/fast:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/cmake_library.dir/build.make library/CMakeFiles/cmake_library.dir/build
-.PHONY : cmake_library/fast
+includes/fast:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/includes.dir/build.make include/CMakeFiles/includes.dir/build
+.PHONY : includes/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -174,8 +175,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cmake_library"
 	@echo "... cmake_tutorial"
+	@echo "... includes"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -190,6 +191,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/ok/Code/raylib_platform/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

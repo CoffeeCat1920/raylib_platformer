@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ok/Code/cmake_tutorial/src/main.cpp" "CMakeFiles/cmake_tutorial.dir/src/main.cpp.o" "gcc" "CMakeFiles/cmake_tutorial.dir/src/main.cpp.o.d"
+  "/home/ok/Code/raylib_platform/src/main.cpp" "CMakeFiles/cmake_tutorial.dir/src/main.cpp.o" "gcc" "CMakeFiles/cmake_tutorial.dir/src/main.cpp.o.d"
   "" "cmake_tutorial" "gcc" "CMakeFiles/cmake_tutorial.dir/link.d"
   )
 

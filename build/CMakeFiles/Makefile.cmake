@@ -7,10 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/ok/Code/cmake_tutorial/CMakeLists.txt"
+  "/home/ok/Code/raylib_platform/CMakeLists.txt"
   "CMakeFiles/4.4.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.2/CMakeSystem.cmake"
-  "/home/ok/Code/cmake_tutorial/library/CMakeLists.txt"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
+  "/home/ok/Code/raylib_platform/include/CMakeLists.txt"
   "/usr/lib/cmake/raylib/raylib-config-version.cmake"
   "/usr/lib/cmake/raylib/raylib-config.cmake"
   "/usr/lib/cmake/raylib/raylib-targets-release.cmake"
@@ -49,11 +51,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "library/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "include/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/cmake_tutorial.dir/DependInfo.cmake"
-  "library/CMakeFiles/cmake_library.dir/DependInfo.cmake"
+  "include/CMakeFiles/includes.dir/DependInfo.cmake"
   )

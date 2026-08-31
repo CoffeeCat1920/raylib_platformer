@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/ok/Code/cmake_tutorial/build/cmake_install.cmake",
-		"/home/ok/Code/cmake_tutorial/build/library/cmake_install.cmake"
+		"/home/ok/Code/raylib_platform/build/cmake_install.cmake",
+		"/home/ok/Code/raylib_platform/build/include/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

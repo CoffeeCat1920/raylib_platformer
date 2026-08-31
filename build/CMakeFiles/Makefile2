@@ -54,67 +54,67 @@ RM = /usr/sbin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ok/Code/cmake_tutorial
+CMAKE_SOURCE_DIR = /home/ok/Code/raylib_platform
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ok/Code/cmake_tutorial/build
+CMAKE_BINARY_DIR = /home/ok/Code/raylib_platform/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/cmake_tutorial.dir/all
-all: library/all
+all: include/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/cmake_tutorial.dir/codegen
-codegen: library/codegen
+codegen: include/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: library/preinstall
+preinstall: include/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cmake_tutorial.dir/clean
-clean: library/clean
+clean: include/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory library
+# Directory level rules for directory include
 
 # Recursive "all" directory target.
-library/all: library/CMakeFiles/cmake_library.dir/all
-.PHONY : library/all
+include/all: include/CMakeFiles/includes.dir/all
+.PHONY : include/all
 
 # Recursive "codegen" directory target.
-library/codegen: library/CMakeFiles/cmake_library.dir/codegen
-.PHONY : library/codegen
+include/codegen: include/CMakeFiles/includes.dir/codegen
+.PHONY : include/codegen
 
 # Recursive "preinstall" directory target.
-library/preinstall:
-.PHONY : library/preinstall
+include/preinstall:
+.PHONY : include/preinstall
 
 # Recursive "clean" directory target.
-library/clean: library/CMakeFiles/cmake_library.dir/clean
-.PHONY : library/clean
+include/clean: include/CMakeFiles/includes.dir/clean
+.PHONY : include/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cmake_tutorial.dir
 
 # All Build rule for target.
-CMakeFiles/cmake_tutorial.dir/all: library/CMakeFiles/cmake_library.dir/all
+CMakeFiles/cmake_tutorial.dir/all: include/CMakeFiles/includes.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_tutorial.dir/build.make CMakeFiles/cmake_tutorial.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_tutorial.dir/build.make CMakeFiles/cmake_tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/cmake_tutorial/build/CMakeFiles --progress-num=3,4 "Built target cmake_tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/raylib_platform/build/CMakeFiles --progress-num=1,2 "Built target cmake_tutorial"
 .PHONY : CMakeFiles/cmake_tutorial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cmake_tutorial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_tutorial.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles 0
 .PHONY : CMakeFiles/cmake_tutorial.dir/rule
 
 # Convenience name for target.
@@ -124,7 +124,7 @@ cmake_tutorial: CMakeFiles/cmake_tutorial.dir/rule
 # codegen rule for target.
 CMakeFiles/cmake_tutorial.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_tutorial.dir/build.make CMakeFiles/cmake_tutorial.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/cmake_tutorial/build/CMakeFiles --progress-num=3,4 "Finished codegen for target cmake_tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/raylib_platform/build/CMakeFiles --progress-num=1,2 "Finished codegen for target cmake_tutorial"
 .PHONY : CMakeFiles/cmake_tutorial.dir/codegen
 
 # clean rule for target.
@@ -133,36 +133,36 @@ CMakeFiles/cmake_tutorial.dir/clean:
 .PHONY : CMakeFiles/cmake_tutorial.dir/clean
 
 #=============================================================================
-# Target rules for target library/CMakeFiles/cmake_library.dir
+# Target rules for target include/CMakeFiles/includes.dir
 
 # All Build rule for target.
-library/CMakeFiles/cmake_library.dir/all:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/cmake_library.dir/build.make library/CMakeFiles/cmake_library.dir/depend
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/cmake_library.dir/build.make library/CMakeFiles/cmake_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/cmake_tutorial/build/CMakeFiles --progress-num=1,2 "Built target cmake_library"
-.PHONY : library/CMakeFiles/cmake_library.dir/all
+include/CMakeFiles/includes.dir/all:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/includes.dir/build.make include/CMakeFiles/includes.dir/depend
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/includes.dir/build.make include/CMakeFiles/includes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/raylib_platform/build/CMakeFiles --progress-num=3,4 "Built target includes"
+.PHONY : include/CMakeFiles/includes.dir/all
 
 # Build rule for subdir invocation for target.
-library/CMakeFiles/cmake_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/cmake_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/cmake_tutorial/build/CMakeFiles 0
-.PHONY : library/CMakeFiles/cmake_library.dir/rule
+include/CMakeFiles/includes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/includes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ok/Code/raylib_platform/build/CMakeFiles 0
+.PHONY : include/CMakeFiles/includes.dir/rule
 
 # Convenience name for target.
-cmake_library: library/CMakeFiles/cmake_library.dir/rule
-.PHONY : cmake_library
+includes: include/CMakeFiles/includes.dir/rule
+.PHONY : includes
 
 # codegen rule for target.
-library/CMakeFiles/cmake_library.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/cmake_library.dir/build.make library/CMakeFiles/cmake_library.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/cmake_tutorial/build/CMakeFiles --progress-num=1,2 "Finished codegen for target cmake_library"
-.PHONY : library/CMakeFiles/cmake_library.dir/codegen
+include/CMakeFiles/includes.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/includes.dir/build.make include/CMakeFiles/includes.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ok/Code/raylib_platform/build/CMakeFiles --progress-num=3,4 "Finished codegen for target includes"
+.PHONY : include/CMakeFiles/includes.dir/codegen
 
 # clean rule for target.
-library/CMakeFiles/cmake_library.dir/clean:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/cmake_library.dir/build.make library/CMakeFiles/cmake_library.dir/clean
-.PHONY : library/CMakeFiles/cmake_library.dir/clean
+include/CMakeFiles/includes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/includes.dir/build.make include/CMakeFiles/includes.dir/clean
+.PHONY : include/CMakeFiles/includes.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -171,6 +171,7 @@ library/CMakeFiles/cmake_library.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/ok/Code/raylib_platform/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,9 @@
-#include "library.hpp"
+#include "Game.hpp"
 #include <raylib.h>
 
 int main() {
-  Library lib(1);
-  lib.PrintA();
+  Game game;
+  game.Init();
+  game.Draw();
+  game.Close();
 }

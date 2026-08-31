@@ -1,14 +1,14 @@
 [
 {
-  "directory": "/home/ok/Code/cmake_tutorial/build",
-  "command": "/usr/sbin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/ok/Code/cmake_tutorial/library/Public -std=c++17 -o CMakeFiles/cmake_tutorial.dir/src/main.cpp.o -c /home/ok/Code/cmake_tutorial/src/main.cpp",
-  "file": "/home/ok/Code/cmake_tutorial/src/main.cpp",
+  "directory": "/home/ok/Code/raylib_platform/build",
+  "command": "/usr/sbin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/ok/Code/raylib_platform/include/Game/Public -std=c++17 -o CMakeFiles/cmake_tutorial.dir/src/main.cpp.o -c /home/ok/Code/raylib_platform/src/main.cpp",
+  "file": "/home/ok/Code/raylib_platform/src/main.cpp",
   "output": "CMakeFiles/cmake_tutorial.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/ok/Code/cmake_tutorial/build/library",
-  "command": "/usr/sbin/c++  -I/home/ok/Code/cmake_tutorial/library/Public -std=c++17 -o CMakeFiles/cmake_library.dir/Private/library.cpp.o -c /home/ok/Code/cmake_tutorial/library/Private/library.cpp",
-  "file": "/home/ok/Code/cmake_tutorial/library/Private/library.cpp",
-  "output": "library/CMakeFiles/cmake_library.dir/Private/library.cpp.o"
+  "directory": "/home/ok/Code/raylib_platform/build/include",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -std=c++17 -o CMakeFiles/includes.dir/Game/Private/Game.cpp.o -c /home/ok/Code/raylib_platform/include/Game/Private/Game.cpp",
+  "file": "/home/ok/Code/raylib_platform/include/Game/Private/Game.cpp",
+  "output": "include/CMakeFiles/includes.dir/Game/Private/Game.cpp.o"
 }
 ]

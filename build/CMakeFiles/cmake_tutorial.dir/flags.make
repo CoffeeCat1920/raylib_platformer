@@ -4,7 +4,7 @@
 # compile CXX with /usr/sbin/c++
 CXX_DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED
 
-CXX_INCLUDES = -I/home/ok/Code/cmake_tutorial/library/Public
+CXX_INCLUDES = -I/home/ok/Code/raylib_platform/include/Game/Public
 
 CXX_FLAGS = -std=c++17
 

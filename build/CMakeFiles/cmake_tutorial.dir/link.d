@@ -3,8 +3,8 @@ cmake_tutorial: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/cmake_tutorial.dir/src/main.cpp.o \
-  library/libcmake_library.a \
   /usr/lib/libraylib.so.6.0.0 \
+  include/libincludes.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -49,9 +49,9 @@ cmake_tutorial: \
 
 CMakeFiles/cmake_tutorial.dir/src/main.cpp.o:
 
-library/libcmake_library.a:
-
 /usr/lib/libraylib.so.6.0.0:
+
+include/libincludes.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 
