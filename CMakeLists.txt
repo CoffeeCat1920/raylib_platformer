@@ -7,7 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(
-  cmake_tutorial
+  raylib_platformer
   VERSION 1.0.0
   DESCRIPTION "A tutorial project demonstrating CMake best practices"
   LANGUAGES CXX
