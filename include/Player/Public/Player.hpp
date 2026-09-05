@@ -3,15 +3,18 @@
 
 class Player : private GameObject {
 private:
-  float speed;
+  float maxVelocityX;
+  float velocityX;
+  float directionX;
+  float accelerationX;
+  float decelerationX;
   float jumpForce;
-  Vector2 acceleration;
-  Vector2 direction;
 
   void CheckDirection();
 
 public:
-  Player(float x, float y, float speed);
+  Player(float x, float y, float accelerationX, float decelerationX,
+         float maxVelocityX);
 
   void Init() override;
   void Update() override;

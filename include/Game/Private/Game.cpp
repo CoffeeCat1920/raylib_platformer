@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-Game::Game() : player(200, 200, 12) {}
+Game::Game() : player(200, 200, 8, 1, 32) {}
 
 void Game::Init() {}
 

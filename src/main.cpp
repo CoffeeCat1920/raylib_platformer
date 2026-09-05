@@ -7,6 +7,8 @@ int main() {
 
   InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Raylib Platformer");
 
+  SetTargetFPS(60);
+
   game.Init();
 
   while (!WindowShouldClose()) {
