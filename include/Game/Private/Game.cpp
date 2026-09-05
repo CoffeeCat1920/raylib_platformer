@@ -1,9 +1,10 @@
 #include "Game.hpp"
 
+Game::Game() : player(200, 200, 12) {}
+
 void Game::Init() {}
 
-void Game::Update() {}
+void Game::Update() { player.Update(); }
 
-void Game::Draw() {}
-
-void Game::Close() {}
+void Game::Draw() { player.Draw(); }
+void Game::Close() { player.Free(); }

@@ -10,9 +10,10 @@ int main() {
   game.Init();
 
   while (!WindowShouldClose()) {
+    game.Update();
     BeginDrawing();
     game.Draw();
-    ClearBackground(GRUVBOX_RED);
+    ClearBackground(GRUVBOX_DARK0);
     EndDrawing();
   }
 
