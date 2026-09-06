@@ -1,10 +1,19 @@
 #include "Player.hpp"
+#include "Settings.hpp"
 #include <raylib.h>
 
 Player::Player(float x, float y, float accelerationX, float decelerationX,
-               float maxVelocityX)
-    : GameObject(Vector2{x, y}, Vector2{1, 1}), decelerationX(decelerationX),
-      maxVelocityX(maxVelocityX), accelerationX(accelerationX) {}
+               float maxVelocityX, float jumpTime, float jumpHeigth)
+    : GameObject(Vector2{x, y}, Vector2{1, 2}, GRUVBOX_AQUA),
+      decelerationX(decelerationX), maxVelocityX(maxVelocityX),
+      accelerationX(accelerationX), jumpTime(jumpTime), jumpHeigth(jumpHeigth) {
+  gravity = (2 * jumpHeigth) / (jumpTime * jumpTime);
+  jumpVelocity = gravity * jumpTime;
+  velocityX = 0;
+  velocityY = 0;
+}
+
+void Player::ApplyGravity() { velocityY += gravity; }
 
 void Player::CheckDirection() {
   directionX = IsKeyDown(KEY_D) - IsKeyDown(KEY_A);
@@ -13,7 +22,8 @@ void Player::CheckDirection() {
 void Player::Init() {}
 
 void Player::Update() {
-  this->CheckDirection();
+
+  CheckDirection();
   if (directionX != 0) {
     if (velocityX < maxVelocityX && velocityX > -maxVelocityX) {
       velocityX += accelerationX * directionX;
@@ -25,8 +35,10 @@ void Player::Update() {
       velocityX += decelerationX;
     }
   }
-  float positionX = velocityX * GetFrameTime();
-  UpdatePosition(velocityX, 0);
+
+  ApplyGravity();
+
+  UpdatePosition(velocityX, velocityY);
 }
 
 void Player::Draw() { DrawBoundry(); }

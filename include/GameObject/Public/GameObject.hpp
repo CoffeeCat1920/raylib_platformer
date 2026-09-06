@@ -7,6 +7,7 @@ private:
   Vector2 position;
   Vector2 transform;
   Rectangle rectangle;
+  Color color;
 
 protected:
   float GetPositionX();
@@ -15,7 +16,7 @@ protected:
   void DrawBoundry();
 
 public:
-  GameObject(Vector2 position, Vector2 transform);
+  GameObject(Vector2 position, Vector2 transform, Color color);
 
   virtual void Init() = 0;
   virtual void Update() = 0;
