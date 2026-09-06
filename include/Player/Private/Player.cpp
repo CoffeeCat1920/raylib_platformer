@@ -1,5 +1,4 @@
 #include "Player.hpp"
-#include "Settings.hpp"
 #include <raylib.h>
 
 Player::Player(float x, float y, float accelerationX, float decelerationX,
@@ -26,10 +25,10 @@ void Player::Update() {
       velocityX += decelerationX;
     }
   }
-  position.x += velocityX * GetFrameTime();
-  rectangle.x = position.x;
+  float positionX = velocityX * GetFrameTime();
+  UpdatePosition(velocityX, 0);
 }
 
-void Player::Draw() { DrawRectangleRec(rectangle, GRUVBOX_RED); }
+void Player::Draw() { DrawBoundry(); }
 
 void Player::Free() {}

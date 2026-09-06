@@ -1,31 +1,37 @@
 [
 {
   "directory": "/home/ok/Code/raylib_platform/build",
-  "command": "/usr/sbin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/raylib_platformer.dir/src/main.cpp.o -c /home/ok/Code/raylib_platform/src/main.cpp",
+  "command": "/usr/sbin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/raylib_platformer.dir/src/main.cpp.o -c /home/ok/Code/raylib_platform/src/main.cpp",
   "file": "/home/ok/Code/raylib_platform/src/main.cpp",
   "output": "CMakeFiles/raylib_platformer.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/ok/Code/raylib_platform/build/include",
-  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Game/Private/Game.cpp.o -c /home/ok/Code/raylib_platform/include/Game/Private/Game.cpp",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Game/Private/Game.cpp.o -c /home/ok/Code/raylib_platform/include/Game/Private/Game.cpp",
   "file": "/home/ok/Code/raylib_platform/include/Game/Private/Game.cpp",
   "output": "include/CMakeFiles/includes.dir/Game/Private/Game.cpp.o"
 },
 {
   "directory": "/home/ok/Code/raylib_platform/build/include",
-  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/GameObject/Private/GameObject.cpp.o -c /home/ok/Code/raylib_platform/include/GameObject/Private/GameObject.cpp",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/GameObject/Private/GameObject.cpp.o -c /home/ok/Code/raylib_platform/include/GameObject/Private/GameObject.cpp",
   "file": "/home/ok/Code/raylib_platform/include/GameObject/Private/GameObject.cpp",
   "output": "include/CMakeFiles/includes.dir/GameObject/Private/GameObject.cpp.o"
 },
 {
   "directory": "/home/ok/Code/raylib_platform/build/include",
-  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Player/Private/Player.cpp.o -c /home/ok/Code/raylib_platform/include/Player/Private/Player.cpp",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Ground/Private/Ground.cpp.o -c /home/ok/Code/raylib_platform/include/Ground/Private/Ground.cpp",
+  "file": "/home/ok/Code/raylib_platform/include/Ground/Private/Ground.cpp",
+  "output": "include/CMakeFiles/includes.dir/Ground/Private/Ground.cpp.o"
+},
+{
+  "directory": "/home/ok/Code/raylib_platform/build/include",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Player/Private/Player.cpp.o -c /home/ok/Code/raylib_platform/include/Player/Private/Player.cpp",
   "file": "/home/ok/Code/raylib_platform/include/Player/Private/Player.cpp",
   "output": "include/CMakeFiles/includes.dir/Player/Private/Player.cpp.o"
 },
 {
   "directory": "/home/ok/Code/raylib_platform/build/include",
-  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Settings/Private/Settings.cpp.o -c /home/ok/Code/raylib_platform/include/Settings/Private/Settings.cpp",
+  "command": "/usr/sbin/c++  -I/home/ok/Code/raylib_platform/include/Game/Public -I/home/ok/Code/raylib_platform/include/GameObject/Public -I/home/ok/Code/raylib_platform/include/Ground/Public -I/home/ok/Code/raylib_platform/include/Player/Public -I/home/ok/Code/raylib_platform/include/Settings/Public -std=c++17 -o CMakeFiles/includes.dir/Settings/Private/Settings.cpp.o -c /home/ok/Code/raylib_platform/include/Settings/Private/Settings.cpp",
   "file": "/home/ok/Code/raylib_platform/include/Settings/Private/Settings.cpp",
   "output": "include/CMakeFiles/includes.dir/Settings/Private/Settings.cpp.o"
 }
